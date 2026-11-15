@@ -56,6 +56,10 @@ ElevenLabs (`src/tts.mjs`), key in `ELEVENLABS_API_KEY`, optional `ELEVENLABS_VO
 Clips are cached in `.cache/tts` by text and voice, so unchanged lines are not re-billed.
 Without a key the render is silent and paced by a words-per-second estimate.
 
+In Claude cloud sessions the key is a network secret on the `instagram_maxxing` environment and is
+injected by the proxy, so no variable holds it. Render with:
+`NODE_USE_ENV_PROXY=1 npm run render reels/<name>.json -- --voice`
+
 ## Layout
 
 - `src/render.mjs` — spec → timeline → frames (parallel Playwright pages) → ffmpeg
