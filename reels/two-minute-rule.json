@@ -1,0 +1,46 @@
+{
+  "title": "The 2-minute rule",
+  "theme": "midnight",
+  "handle": "@yourhandle",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Productivity",
+      "text": "Your to-do list is *lying* to you.",
+      "vo": "Your to-do list is lying to you."
+    },
+    {
+      "type": "point",
+      "kicker": "01",
+      "text": "Tiny tasks pile up *fast*",
+      "sub": "Each one costs more to remember than to finish.",
+      "vo": "Tiny tasks pile up fast. And each one costs more to remember than it does to finish."
+    },
+    {
+      "type": "stat",
+      "value": "2 min",
+      "text": "is the only number you need.",
+      "vo": "So here's the rule. Two minutes."
+    },
+    {
+      "type": "point",
+      "kicker": "02",
+      "text": "Under two minutes? Do it *now*",
+      "sub": "Reply. File it. Wash the cup. No list required.",
+      "vo": "If something takes less than two minutes, do it right now. Reply, file it, wash the cup."
+    },
+    {
+      "type": "point",
+      "kicker": "03",
+      "text": "Longer? *Schedule* it",
+      "sub": "Give it a time, not a spot on a list.",
+      "vo": "If it takes longer, schedule it. Give it a time, not a spot on a list."
+    },
+    {
+      "type": "cta",
+      "text": "Try it for *one day*",
+      "sub": "Follow for more two-minute ideas",
+      "vo": "Try it for one day. And follow for more."
+    }
+  ]
+}
