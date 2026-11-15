@@ -4,8 +4,8 @@
   "type": "module",
   "description": "Code-generated Instagram reels: JSON script -> animated 9:16 MP4 with AI voiceover",
   "scripts": {
-    "render": "node src/render.mjs",
-    "preview": "node src/render.mjs --preview"
+    "render": "node --env-file-if-exists=.env src/render.mjs",
+    "preview": "node --env-file-if-exists=.env src/render.mjs --preview"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.5",

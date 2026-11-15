@@ -3,6 +3,11 @@
 Code-generated Instagram reels. A reel is a JSON script in `reels/`; the renderer turns it
 into a 1080x1920, 30fps MP4 with animated text, word-synced captions, and an AI voiceover.
 
+## Where things stand
+
+The channel's niche and animation style are still being decided. Read
+`research/channel-concepts.md` before proposing content or building new scene types.
+
 ## Commands
 
 - `npm install` — once (set `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1` in Claude cloud sessions; Chromium is preinstalled)
@@ -53,6 +58,7 @@ Scene types and their fields (`text` is on screen; `vo` is what is spoken):
 ## Voiceover
 
 ElevenLabs (`src/tts.mjs`), key in `ELEVENLABS_API_KEY`, optional `ELEVENLABS_VOICE_ID`.
+On a local machine put them in a `.env` file at the repo root (gitignored; the npm scripts load it).
 Clips are cached in `.cache/tts` by text and voice, so unchanged lines are not re-billed.
 Without a key the render is silent and paced by a words-per-second estimate.
 
